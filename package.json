@@ -20,6 +20,11 @@
     "subscription": "^3.0.0",
     "markdown-it": "^6.0.4"
   },
+  "jspm": {
+    "main": "dist/edit/index.js",
+    "registry": "npm",
+    "format": "cjs"
+  },
   "devDependencies": {
     "babel-cli": "^6.4.0",
     "babel-core": "^6.4.5",
