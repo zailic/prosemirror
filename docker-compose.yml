@@ -1,0 +1,19 @@
+version: "2"
+
+services:
+  prosemirror:
+    build: .
+    ports: 
+      - "8080:8080"
+    volumes:
+      - ./src:/prosemirror/src
+      - ./script:/prosemirror/script
+      - ./demo:/prosemirror/demo
+      - ./dist:/prosemirror/dist
+    environment: 
+      - VIRTUAL_HOST=prosemirror.local  
+
+networks:
+  default:
+    external:
+      name: rproxy_default

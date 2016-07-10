@@ -1,6 +1,6 @@
 {
   "name": "prosemirror",
-  "version": "0.8.1",
+  "version": "0.8.3",
   "description": "Well-defined WYSIWYG editor",
   "main": "dist/edit/index.js",
   "license": "MIT",
@@ -33,7 +33,7 @@
   },
   "scripts": {
     "test": "node src/test/run.js",
-    "demo": "moduleserve demo",
+    "demo": "moduleserve demo --host 172.20.0.6",
     "dist": "babel -d dist src",
     "dist-watch": "babel -w -d dist src",
     "lint": "blint --browser --ecmaVersion 6 --forbidSemicolons src || true",
